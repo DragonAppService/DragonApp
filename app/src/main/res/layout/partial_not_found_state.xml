@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@drawable/img_bg">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/boxTopGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/boxBottomGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/boxStartGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/boxEndGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <ImageView
+        android:id="@+id/loginCpfWhiteBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.45"
+        android:scaleType="fitXY"
+        android:src="@drawable/cpf_white_container"
+        app:layout_constraintBottom_toBottomOf="@id/boxBottomGuideline"
+        app:layout_constraintEnd_toEndOf="@id/boxEndGuideline"
+        app:layout_constraintStart_toStartOf="@id/boxStartGuideline"
+        app:layout_constraintTop_toTopOf="@id/boxTopGuideline" />
+
+    <TextView
+        android:id="@+id/visitorNotFoundMessageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/cpf_login_not_found_message"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/visitorNotFoundItalicMessageTextView"
+        app:layout_constraintEnd_toEndOf="@+id/loginCpfWhiteBox"
+        app:layout_constraintStart_toStartOf="@+id/loginCpfWhiteBox"
+        app:layout_constraintTop_toTopOf="@+id/loginCpfWhiteBox" />
+
+    <TextView
+        android:id="@+id/visitorNotFoundItalicMessageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/cpf_login_italic_not_found_message"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/loginCpfWhiteBox"
+        app:layout_constraintStart_toStartOf="@+id/loginCpfWhiteBox"
+        app:layout_constraintTop_toBottomOf="@+id/visitorNotFoundMessageTextView" />
+
+    <Button
+        android:id="@+id/createNewRegisterButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:alpha="0.75"
+        android:background="@drawable/rounded_border_button"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/loginCpfWhiteBox"
+        app:layout_constraintEnd_toEndOf="@id/visitorNotFoundMessageTextView"
+        app:layout_constraintStart_toStartOf="@id/visitorNotFoundMessageTextView"
+        app:layout_constraintTop_toBottomOf="@+id/visitorNotFoundItalicMessageTextView" />
+
+    <TextView
+        android:id="@+id/createNewRegisterButtonMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cpf_login_register_button"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/createNewRegisterButtonItalicMessage"
+        app:layout_constraintEnd_toEndOf="@+id/createNewRegisterButton"
+        app:layout_constraintStart_toStartOf="@+id/createNewRegisterButton"
+        app:layout_constraintTop_toTopOf="@+id/createNewRegisterButton" />
+
+    <TextView
+        android:id="@+id/createNewRegisterButtonItalicMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cpf_login_italic_register_button"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/createNewRegisterButton"
+        app:layout_constraintEnd_toEndOf="@+id/createNewRegisterButton"
+        app:layout_constraintStart_toStartOf="@+id/createNewRegisterButton"
+        app:layout_constraintTop_toBottomOf="@+id/createNewRegisterButtonMessage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

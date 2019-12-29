@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@drawable/img_bg">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/boxTopGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.27" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/boxBottomGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.73" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/boxStartGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/boxEndGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <ImageView
+        android:id="@+id/loginCpfWhiteBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.45"
+        android:scaleType="fitXY"
+        android:src="@drawable/cpf_white_container"
+        app:layout_constraintBottom_toBottomOf="@id/boxBottomGuideline"
+        app:layout_constraintEnd_toEndOf="@id/boxEndGuideline"
+        app:layout_constraintStart_toStartOf="@id/boxStartGuideline"
+        app:layout_constraintTop_toTopOf="@id/boxTopGuideline" />
+
+    <TextView
+        android:id="@+id/welcomeLabelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="@string/cpf_login_welcome_label"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/italicWelcomeLabelText"
+        app:layout_constraintEnd_toEndOf="@id/loginCpfWhiteBox"
+        app:layout_constraintStart_toStartOf="@id/loginCpfWhiteBox"
+        app:layout_constraintTop_toTopOf="@id/loginCpfWhiteBox" />
+
+    <TextView
+        android:id="@+id/italicWelcomeLabelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/cpf_login_italic_welcome_label"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@id/welcomeLabelText"
+        app:layout_constraintStart_toStartOf="@id/welcomeLabelText"
+        app:layout_constraintTop_toBottomOf="@id/welcomeLabelText" />
+
+    <EditText
+        android:id="@+id/inputCpfEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rounded_border_edit_text_background"
+        android:hint="@string/cpf_login_cpf_input_hint"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:minHeight="80dp"
+        android:textColorHint="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/cpfSubmitButton"
+        app:layout_constraintEnd_toEndOf="@id/loginCpfWhiteBox"
+        app:layout_constraintStart_toStartOf="@id/loginCpfWhiteBox"
+        app:layout_constraintTop_toBottomOf="@+id/italicWelcomeLabelText" />
+
+    <Button
+        android:id="@+id/cpfSubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.75"
+        android:background="@drawable/rounded_border_button"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/loginCpfWhiteBox"
+        app:layout_constraintEnd_toEndOf="@id/loginCpfWhiteBox"
+        app:layout_constraintStart_toStartOf="@id/loginCpfWhiteBox"
+        app:layout_constraintTop_toBottomOf="@+id/inputCpfEditText" />
+
+    <TextView
+        android:id="@+id/cpfSubmitLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cpf_login_confirm_button"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/italicCpfSubmitLabel"
+        app:layout_constraintEnd_toEndOf="@+id/cpfSubmitButton"
+        app:layout_constraintStart_toStartOf="@+id/cpfSubmitButton"
+        app:layout_constraintTop_toTopOf="@+id/cpfSubmitButton" />
+
+    <TextView
+        android:id="@+id/italicCpfSubmitLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cpf_login_italic_confirm_button"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/cpfSubmitButton"
+        app:layout_constraintEnd_toEndOf="@+id/cpfSubmitButton"
+        app:layout_constraintStart_toStartOf="@+id/cpfSubmitButton"
+        app:layout_constraintTop_toBottomOf="@+id/cpfSubmitLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

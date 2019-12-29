@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cpfActivityRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_bg"
+    tools:context=".flow.cpf.CpfActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/boxTopGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.27" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/boxBottomGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.73" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/boxStartGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/boxEndGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <ImageView
+        android:id="@+id/whiteBoxContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.45"
+        android:scaleType="fitXY"
+        android:src="@drawable/cpf_white_container"
+        app:layout_constraintBottom_toBottomOf="@id/boxBottomGuideline"
+        app:layout_constraintEnd_toEndOf="@id/boxEndGuideline"
+        app:layout_constraintStart_toStartOf="@id/boxStartGuideline"
+        app:layout_constraintTop_toTopOf="@id/boxTopGuideline" />
+
+    <TextView
+        android:id="@+id/currentDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/cpfScreenCurrentDateTextColor"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/cpfBoxFirstDivider"
+        app:layout_constraintEnd_toEndOf="@+id/whiteBoxContainer"
+        app:layout_constraintStart_toStartOf="@+id/whiteBoxContainer"
+        app:layout_constraintTop_toTopOf="@+id/whiteBoxContainer"
+        tools:text="Date / Time" />
+
+    <ImageView
+        android:id="@+id/cpfBoxFirstDivider"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:contentDescription="@string/cpf_activity_white_box_divider_content_description"
+        android:src="@drawable/cpf_white_box_line_divider"
+        app:layout_constraintBottom_toTopOf="@+id/eventNameText"
+        app:layout_constraintEnd_toEndOf="@+id/whiteBoxContainer"
+        app:layout_constraintStart_toStartOf="@+id/whiteBoxContainer"
+        app:layout_constraintTop_toBottomOf="@+id/currentDateText" />
+
+    <TextView
+        android:id="@+id/eventNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cpfScreenCurrentDateTextColor"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/cpfBoxSecondDivider"
+        app:layout_constraintEnd_toEndOf="@id/whiteBoxContainer"
+        app:layout_constraintStart_toStartOf="@id/whiteBoxContainer"
+        app:layout_constraintTop_toBottomOf="@+id/cpfBoxFirstDivider"
+        tools:text="Título Evento" />
+
+    <ImageView
+        android:id="@+id/cpfBoxSecondDivider"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:contentDescription="@string/cpf_activity_white_box_divider_content_description"
+        android:src="@drawable/cpf_white_box_line_divider"
+        app:layout_constraintBottom_toTopOf="@+id/preRegisterButton"
+        app:layout_constraintEnd_toEndOf="@+id/whiteBoxContainer"
+        app:layout_constraintStart_toStartOf="@+id/whiteBoxContainer"
+        app:layout_constraintTop_toBottomOf="@+id/eventNameText" />
+
+    <Button
+        android:id="@+id/preRegisterButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:alpha="0.75"
+        android:padding="8dp"
+        android:text="@string/cpf_activity_account_created_button"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/whiteBoxContainer"
+        app:layout_constraintEnd_toStartOf="@id/newRegisterButton"
+        app:layout_constraintStart_toStartOf="@id/whiteBoxContainer"
+        app:layout_constraintTop_toBottomOf="@+id/cpfBoxSecondDivider" />
+
+    <Button
+        android:id="@+id/newRegisterButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:alpha="0.75"
+        android:padding="8dp"
+        android:text="@string/cpf_activity_new_account_button"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/whiteBoxContainer"
+        app:layout_constraintEnd_toEndOf="@id/whiteBoxContainer"
+        app:layout_constraintStart_toEndOf="@id/preRegisterButton"
+        app:layout_constraintTop_toBottomOf="@id/cpfBoxSecondDivider" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/adminVerticalGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/adminHorizontalGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <ImageView
+        android:id="@+id/adminAreaBackground"
+        android:layout_width="170dp"
+        android:layout_height="80dp"
+        android:alpha="0.45"
+        android:scaleType="fitXY"
+        android:src="@drawable/cpf_white_container"
+        app:layout_constraintStart_toEndOf="@+id/adminVerticalGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/adminHorizontalGuideline" />
+
+    <TextView
+        android:id="@+id/adminAreaText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center|start"
+        android:lines="2"
+        android:minLines="2"
+        android:text="@string/cpf_activity_admin_area_text"
+        android:textAllCaps="true"
+        android:textColor="@color/cpfScreenCurrentDateTextColor"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/adminAreaBackground"
+        app:layout_constraintEnd_toStartOf="@+id/adminAreaImage"
+        app:layout_constraintStart_toStartOf="@+id/adminAreaBackground"
+        app:layout_constraintTop_toTopOf="@id/adminAreaBackground" />
+
+    <ImageView
+        android:id="@+id/adminAreaImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_admin"
+        app:layout_constraintBottom_toBottomOf="@id/adminAreaBackground"
+        app:layout_constraintEnd_toEndOf="@+id/adminAreaBackground"
+        app:layout_constraintTop_toTopOf="@id/adminAreaBackground" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

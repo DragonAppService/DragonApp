@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/adminMainRootView"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_bg"
+    tools:context=".flow.admin.AdminMainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/adminMainFirstGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/adminMainSecondGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <ImageView
+        android:id="@+id/whiteBoxContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.45"
+        android:scaleType="fitXY"
+        android:src="@drawable/cpf_white_container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/adminBaseLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/admin_activity_admin_label"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/importCsvButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/importCsvButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_border_transparent_button"
+        android:text="@string/admin_activity_import_csv_button"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/exportCsvButton"
+        app:layout_constraintEnd_toEndOf="@id/adminMainSecondGuideline"
+        app:layout_constraintStart_toStartOf="@id/adminMainFirstGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/adminBaseLabel" />
+
+    <Button
+        android:id="@+id/exportCsvButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_border_transparent_button"
+        android:text="@string/admin_activity_export_csv_button"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/changeBgButton"
+        app:layout_constraintEnd_toEndOf="@id/adminMainSecondGuideline"
+        app:layout_constraintStart_toStartOf="@id/adminMainFirstGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/importCsvButton" />
+
+    <Button
+        android:id="@+id/changeBgButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_border_transparent_button"
+        android:text="@string/admin_activity_change_bg_button"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/editFormButton"
+        app:layout_constraintEnd_toEndOf="@id/adminMainSecondGuideline"
+        app:layout_constraintStart_toStartOf="@id/adminMainFirstGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/exportCsvButton" />
+
+    <Button
+        android:id="@+id/editFormButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_border_transparent_button"
+        android:text="@string/admin_activity_edit_form_button"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@id/statusButton"
+        app:layout_constraintEnd_toEndOf="@id/adminMainSecondGuideline"
+        app:layout_constraintStart_toStartOf="@id/adminMainFirstGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/changeBgButton" />
+
+    <Button
+        android:id="@+id/statusButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_border_transparent_button"
+        android:text="@string/admin_activity_status_button"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/printConfigButton"
+        app:layout_constraintEnd_toEndOf="@id/adminMainSecondGuideline"
+        app:layout_constraintStart_toStartOf="@id/adminMainFirstGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/editFormButton" />
+
+    <Button
+        android:id="@+id/printConfigButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_border_transparent_button"
+        android:text="@string/admin_activity_print_config"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/adminMainSecondGuideline"
+        app:layout_constraintStart_toStartOf="@id/adminMainFirstGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/statusButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

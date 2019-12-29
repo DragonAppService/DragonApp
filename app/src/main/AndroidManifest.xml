@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dragon.dragoncredenciamento">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:remove="android:appComponentFactory"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".flow.cpf.CpfActivity"
+            android:screenOrientation="userLandscape"
+            android:theme="@style/FullscreenNoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".flow.login.LoginCpfActivity"
+            android:screenOrientation="userLandscape"
+            android:theme="@style/FullscreenNoActionBar" />
+        <activity
+            android:name=".flow.admin.AdminMainActivity"
+            android:screenOrientation="userLandscape"
+            android:theme="@style/FullscreenNoActionBar" />
+        <activity
+            android:name=".flow.admin.login.AdminLoginActivity"
+            android:screenOrientation="userLandscape"
+            android:theme="@style/FullscreenNoActionBar" />
+        <activity
+            android:name=".flow.admin.form.CustomFormActivity"
+            android:parentActivityName=".flow.admin.AdminMainActivity"
+            android:screenOrientation="userLandscape"
+            android:theme="@style/FullscreenLightNoActionBar" />
+        <activity
+            android:name=".flow.admin.configure.PrintConfigActivity"
+            android:parentActivityName=".flow.admin.AdminMainActivity"
+            android:screenOrientation="userLandscape"
+            android:theme="@style/FullscreenLightNoActionBar" />
+        <activity
+            android:name=".flow.register.NewRegisterActivity"
+            android:parentActivityName=".flow.cpf.CpfActivity"
+            android:screenOrientation="userLandscape"
+            android:theme="@style/FullscreenLightNoActionBar" />
+        <activity
+            android:name=".flow.admin.chart.ChartActivity"
+            android:parentActivityName=".flow.admin.AdminMainActivity"
+            android:screenOrientation="userLandscape"
+            android:theme="@style/FullscreenLightNoActionBar" />
+    </application>
+
+</manifest>

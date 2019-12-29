@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".flow.admin.form.CustomFormActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/centerGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/startGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.04" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/customFormToolbar"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="@string/custom_form_toolbar_title"
+            app:titleTextColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/customFormPersonalInfoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/custom_form_personal_info_label"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/customFormToolbar" />
+
+        <CheckBox
+            android:id="@+id/firstNameCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_personal_info_first_name"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/customFormPersonalInfoLabel" />
+
+        <CheckBox
+            android:id="@+id/genderCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_personal_info_gender"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/firstNameCheckbox" />
+
+        <CheckBox
+            android:id="@+id/emailCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_personal_info_email"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/genderCheckbox" />
+
+        <CheckBox
+            android:id="@+id/homePhoneCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_personal_info_home_phone"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/emailCheckbox" />
+
+        <CheckBox
+            android:id="@+id/surnameCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_personal_info_surname"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@id/centerGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/customFormPersonalInfoLabel" />
+
+        <CheckBox
+            android:id="@+id/birthdateCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_personal_info_birthdate"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@id/centerGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/surnameCheckbox" />
+
+        <CheckBox
+            android:id="@+id/copyEmailCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_personal_info_copy_email"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@id/centerGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/birthdateCheckbox" />
+
+        <CheckBox
+            android:id="@+id/cellphoneCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_personal_info_cellphone"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@id/centerGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/copyEmailCheckbox" />
+
+        <TextView
+            android:id="@+id/customFormAddressLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/custom_form_address_label"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/homePhoneCheckbox" />
+
+        <CheckBox
+            android:id="@+id/countryCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_address_country"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/customFormAddressLabel" />
+
+        <CheckBox
+            android:id="@+id/cityCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_address_city"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/countryCheckbox" />
+
+        <CheckBox
+            android:id="@+id/addressCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_address_address"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/cityCheckbox" />
+
+        <CheckBox
+            android:id="@+id/complementCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_address_complement"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/addressCheckbox" />
+
+        <CheckBox
+            android:id="@+id/stateCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_address_state"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@id/centerGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/customFormAddressLabel" />
+
+        <CheckBox
+            android:id="@+id/neighborhoodCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_address_neighbourhood"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@id/centerGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/stateCheckbox" />
+
+        <CheckBox
+            android:id="@+id/postalCodeCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_address_zip_code"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@id/centerGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/neighborhoodCheckbox" />
+
+        <TextView
+            android:id="@+id/customFormCompanyLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/custom_form_company_label"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/complementCheckbox" />
+
+        <CheckBox
+            android:id="@+id/companyNameCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_company_name"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/customFormCompanyLabel" />
+
+        <CheckBox
+            android:id="@+id/companyActivityCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_company_activity"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/companyNameCheckbox" />
+
+        <CheckBox
+            android:id="@+id/companyOfficeCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_company_office"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/companyActivityCheckbox" />
+
+        <CheckBox
+            android:id="@+id/companyNameForBadgeCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_company_name_for_badge"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/centerGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/customFormCompanyLabel" />
+
+        <CheckBox
+            android:id="@+id/companyBadgeNameCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_company_badge_name"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/centerGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/companyNameForBadgeCheckbox" />
+
+        <CheckBox
+            android:id="@+id/companyJobCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_company_job"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/centerGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/companyBadgeNameCheckbox" />
+
+        <TextView
+            android:id="@+id/customFormProductsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/custom_form_products_label"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/companyJobCheckbox" />
+
+        <CheckBox
+            android:id="@+id/productsBuyAndProductionCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_products_buy_and_production"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/customFormProductsLabel" />
+
+        <CheckBox
+            android:id="@+id/productsConnectedMediaCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_products_connected_media"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/productsBuyAndProductionCheckbox" />
+
+        <CheckBox
+            android:id="@+id/productsDisplaysCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_products_displays_and_systems"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/productsConnectedMediaCheckbox" />
+
+        <CheckBox
+            android:id="@+id/productsSystemManagementCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_products_systems_management"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/productsDisplaysCheckbox" />
+
+        <CheckBox
+            android:id="@+id/productsProAudioCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_products_pro_audio"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/productsSystemManagementCheckbox" />
+
+        <CheckBox
+            android:id="@+id/productsContentCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_products_content"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/centerGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/customFormProductsLabel" />
+
+        <CheckBox
+            android:id="@+id/productsDistributionAndDeliveriesCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_products_distribution"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/centerGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/productsContentCheckbox" />
+
+        <CheckBox
+            android:id="@+id/productsServicesCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_products_services"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/centerGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/productsDistributionAndDeliveriesCheckbox" />
+
+        <CheckBox
+            android:id="@+id/productsPosProductionCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/custom_form_products_pos_production"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/centerGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/productsServicesCheckbox" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

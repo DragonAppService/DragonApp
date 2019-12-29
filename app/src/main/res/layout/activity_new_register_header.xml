@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/personalInfoBlueCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/blue_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/personalInfoTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/personalInfoBlueCircleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_register_products_blue_circle_personal_info_text"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/personalInfoBlueCircle"
+        app:layout_constraintEnd_toEndOf="@id/personalInfoBlueCircle"
+        app:layout_constraintStart_toStartOf="@id/personalInfoBlueCircle"
+        app:layout_constraintTop_toTopOf="@id/personalInfoBlueCircle" />
+
+    <ImageView
+        android:id="@+id/personalInfoBlueCircleImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_success"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/personalInfoBlueCircle"
+        app:layout_constraintEnd_toEndOf="@id/personalInfoBlueCircle"
+        app:layout_constraintStart_toStartOf="@id/personalInfoBlueCircle"
+        app:layout_constraintTop_toTopOf="@id/personalInfoBlueCircle" />
+
+    <TextView
+        android:id="@+id/personalInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/new_register_products_step_personal_info_label"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@id/personalInfoBlueCircle"
+        app:layout_constraintEnd_toStartOf="@+id/addressBlueCircle"
+        app:layout_constraintStart_toEndOf="@+id/personalInfoBlueCircle"
+        app:layout_constraintTop_toTopOf="@id/personalInfoBlueCircle" />
+
+    <ImageView
+        android:id="@+id/addressBlueCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/blue_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addressTextView"
+        app:layout_constraintStart_toEndOf="@+id/personalInfoTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/addressBlueCircleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_register_products_blue_circle_address_text"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/addressBlueCircle"
+        app:layout_constraintEnd_toEndOf="@id/addressBlueCircle"
+        app:layout_constraintStart_toStartOf="@id/addressBlueCircle"
+        app:layout_constraintTop_toTopOf="@id/addressBlueCircle" />
+
+    <ImageView
+        android:id="@+id/addressBlueCircleImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_success"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/addressBlueCircle"
+        app:layout_constraintEnd_toEndOf="@id/addressBlueCircle"
+        app:layout_constraintStart_toStartOf="@id/addressBlueCircle"
+        app:layout_constraintTop_toTopOf="@id/addressBlueCircle" />
+
+    <TextView
+        android:id="@+id/addressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/new_register_products_step_address_label"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@id/addressBlueCircle"
+        app:layout_constraintEnd_toStartOf="@+id/companyBlueCircle"
+        app:layout_constraintStart_toEndOf="@+id/addressBlueCircle"
+        app:layout_constraintTop_toTopOf="@id/addressBlueCircle" />
+
+    <ImageView
+        android:id="@+id/companyBlueCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/blue_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/companyTextView"
+        app:layout_constraintStart_toEndOf="@+id/addressTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/companyBlueCircleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_register_products_blue_circle_company_text"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/companyBlueCircle"
+        app:layout_constraintEnd_toEndOf="@id/companyBlueCircle"
+        app:layout_constraintStart_toStartOf="@id/companyBlueCircle"
+        app:layout_constraintTop_toTopOf="@id/companyBlueCircle" />
+
+    <ImageView
+        android:id="@+id/companyBlueCircleImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_success"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/companyBlueCircle"
+        app:layout_constraintEnd_toEndOf="@id/companyBlueCircle"
+        app:layout_constraintStart_toStartOf="@id/companyBlueCircle"
+        app:layout_constraintTop_toTopOf="@id/companyBlueCircle" />
+
+    <TextView
+        android:id="@+id/companyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/new_register_products_step_company_label"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@id/companyBlueCircle"
+        app:layout_constraintEnd_toStartOf="@+id/productsBlueCircle"
+        app:layout_constraintStart_toEndOf="@+id/companyBlueCircle"
+        app:layout_constraintTop_toTopOf="@id/companyBlueCircle" />
+
+    <ImageView
+        android:id="@+id/productsBlueCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/blue_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/productsTextView"
+        app:layout_constraintStart_toEndOf="@+id/companyTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/productsBlueCircleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_register_products_blue_circle_products_text"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/productsBlueCircle"
+        app:layout_constraintEnd_toEndOf="@id/productsBlueCircle"
+        app:layout_constraintStart_toStartOf="@id/productsBlueCircle"
+        app:layout_constraintTop_toTopOf="@id/productsBlueCircle" />
+
+    <ImageView
+        android:id="@+id/productsBlueCircleImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_success"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/productsBlueCircle"
+        app:layout_constraintEnd_toEndOf="@id/productsBlueCircle"
+        app:layout_constraintStart_toStartOf="@id/productsBlueCircle"
+        app:layout_constraintTop_toTopOf="@id/productsBlueCircle" />
+
+    <TextView
+        android:id="@+id/productsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/new_register_products_step_products_label"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@id/productsBlueCircle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/productsBlueCircle"
+        app:layout_constraintTop_toTopOf="@id/productsBlueCircle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

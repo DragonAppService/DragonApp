@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/centerGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/startGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.04" />
+
+        <TextView
+            android:id="@+id/newRegisterProductsBuyAndProductionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/new_register_products_buy_and_production_label"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/newRegisterProductsGadgetsCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/new_register_products_buy_and_production_gadgets"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/newRegisterProductsBuyAndProductionLabel" />
+
+        <CheckBox
+            android:id="@+id/newRegisterProductsCinemaCapitationCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/new_register_products_buy_and_production_cinema_captation"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/newRegisterProductsGadgetsCheckbox" />
+
+        <CheckBox
+            android:id="@+id/newRegisterProductsSetDesignCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/new_register_products_buy_and_production_set_design"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/newRegisterProductsCinemaCapitationCheckbox" />
+
+        <CheckBox
+            android:id="@+id/newRegisterProductsRemoteContributionCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/new_register_products_buy_and_production_remote_contribution"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/newRegisterProductsSetDesignCheckbox" />
+
+        <CheckBox
+            android:id="@+id/newRegisterProductsCameraAndLensCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/new_register_products_buy_and_production_camera_and_lens"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/newRegisterProductsRemoteContributionCheckbox" />
+
+        <CheckBox
+            android:id="@+id/newRegisterProductsLightsAndSupportsCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/new_register_products_buy_and_production_lights_and_support"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/newRegisterProductsCameraAndLensCheckbox" />
+
+        <CheckBox
+            android:id="@+id/newRegisterProductsMicrophoneCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/new_register_products_buy_and_production_microphone"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/centerGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/newRegisterProductsBuyAndProductionLabel" />
+
+        <CheckBox
+            android:id="@+id/newRegisterProductsMobileProductionCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/new_register_products_buy_and_production_mobile_production"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/centerGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/newRegisterProductsMicrophoneCheckbox" />
+
+        <CheckBox
+            android:id="@+id/newRegisterProductsCinemaProductionCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/new_register_products_buy_and_production_cinema_production"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/centerGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/newRegisterProductsMobileProductionCheckbox" />
+
+        <CheckBox
+            android:id="@+id/newRegisterProductsWorkflowSolutionsCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/new_register_products_buy_and_production_workflow_solutions"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/centerGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/newRegisterProductsCinemaProductionCheckbox" />
+
+        <CheckBox
+            android:id="@+id/newRegisterProductsDigitalSolutionsCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/new_register_products_buy_and_production_digital_solutions"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/centerGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/newRegisterProductsWorkflowSolutionsCheckbox" />
+
+        <TextView
+            android:id="@+id/newRegisterProductsDisplaysLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/new_register_products_displays_label"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/newRegisterProductsLightsAndSupportsCheckbox" />
+
+        <CheckBox
+            android:id="@+id/newRegisterProductsDisplaysBusinessStakeholdersCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/new_register_products_displays_business_stakeholders"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/newRegisterProductsDisplaysLabel" />
+
+        <CheckBox
+            android:id="@+id/newRegisterProductsDisplaysEventsCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/new_register_products_displays_events"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/newRegisterProductsDisplaysBusinessStakeholdersCheckbox" />
+
+        <ImageView
+            android:id="@+id/newRegisterProductsSectionDividerImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="100dp"
+            android:src="@drawable/horizontal_grey_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/newRegisterProductsDisplaysEventsCheckbox" />
+
+        <CheckBox
+            android:id="@+id/newRegisterProductsDisplaysTabletsCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/new_register_products_displays_tablets"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/centerGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/newRegisterProductsDisplaysLabel" />
+
+        <CheckBox
+            android:id="@+id/newRegisterProductsOptInPartnerEmailsCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/new_register_products_opt_in_partner_emails"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/newRegisterProductsSectionDividerImageView" />
+
+        <CheckBox
+            android:id="@+id/newRegisterProductsOptInEventChangesEmailsCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/new_register_products_opt_in_event_changes_email"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/newRegisterProductsOptInPartnerEmailsCheckbox" />
+
+        <CheckBox
+            android:id="@+id/newRegisterProductsOptInSetNewsletterCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/new_register_products_opt_in_set_newsletter"
+            app:buttonTint="#4285F4"
+            app:layout_constraintStart_toStartOf="@+id/startGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/newRegisterProductsOptInEventChangesEmailsCheckbox" />
+
+        <TextView
+            android:id="@+id/newRegisterProductsConfirmText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/new_register_company_continue"
+            android:textColor="@color/blue"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/newRegisterProductsBackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/new_register_company_back"
+            android:textColor="@color/grey"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

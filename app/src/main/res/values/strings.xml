@@ -1,0 +1,173 @@
+<resources>
+    <string name="app_name">DragonCredenciamento</string>
+
+    <!-- Cpf Screen -->
+    <string name="cpf_activity_white_box_divider_content_description">Divider</string>
+    <string name="cpf_activity_account_created_button">Já fiz meu pré-cadastro \n Already registered</string>
+    <string name="cpf_activity_new_account_button">Novo cadastro \nNew register</string>
+    <string name="cpf_activity_admin_area_text">ÁREA RESTRITA</string>
+    <string name="cpf_activity_rationale_dialog_message">Permissão necessária</string>
+
+    <!-- Cpf Login Screen -->
+    <string name="cpf_login_welcome_label">Seja bem-vindo(a)</string>
+    <string name="cpf_login_italic_welcome_label">Welcome!</string>
+    <string name="cpf_login_cpf_input_hint">Digite seu CPF / Insert your Passport ID</string>
+    <string name="cpf_login_confirm_button">Confirmar</string>
+    <string name="cpf_login_italic_confirm_button">Confirm</string>
+
+    <!-- Cpf logged screen -->
+    <string name="cpf_login_located_login_message">Prezado(a) %1s, seu cadastro \n foi localizado com sucesso. </string>
+    <string name="cpf_login_italic_located_login_message">Your registration was successfully found.</string>
+    <string name="cpf_login_error_messaage">Erro ao imprimir etiqueta, contate um técnico..</string>
+
+    <!-- Cpf not found screen -->
+    <string name="cpf_login_not_found_message">Caro visitante, seu cadastro não foi localizado.</string>
+    <string name="cpf_login_italic_not_found_message">Dear visitor, your registration wasn\'t found </string>
+    <string name="cpf_login_register_button">Clique aqui para criar um novo cadastro.</string>
+    <string name="cpf_login_italic_register_button">Click here to register</string>
+
+    <!-- Admin Login screen -->
+    <string name="admin_login_label">Área Restrita</string>
+    <string name="admin_login_password_hint">Senha</string>
+    <string name="admin_login_button">Confirmar</string>
+    <string name="admin_login_invalid_credentials">Credenciais inváldas!</string>
+
+    <!-- Admin Main Screen -->
+    <string name="admin_activity_admin_label">ADMIN</string>
+    <string name="admin_activity_import_csv_button">Importar CSV</string>
+    <string name="admin_activity_export_csv_button">Exportar CSV</string>
+    <string name="admin_activity_change_bg_button">Trocar Background</string>
+    <string name="admin_activity_edit_form_button">Customizar Form</string>
+    <string name="admin_activity_status_button">Estatisticas</string>
+    <string name="admin_activity_print_config">Configurar Impressora</string>
+    <string name="admin_activity_import_csv_dialog_message">Deseja importar im CSV?</string>
+    <string name="admin_activity_import_csv_dialog_positive_btn">CONFIRMAR</string>
+    <string name="admin_activity_import_csv_dialog_negative_btn">CANCELAR</string>
+    <string name="admin_activity_db_exported_message">Banco de dados exportado com sucesso</string>
+    <string name="admin_activity_db_not_exported_message">Erro ao exportar banco de dados!</string>
+    <string name="admin_activity_db_empty_message">Banco de dados vazio!</string>
+    <string name="admin_activity_db_imported_message">Banco de dados atualizado com sucesso</string>
+    <string name="admin_activity_db_not_imported_message">Erro ao importar banco de dados!</string>
+    <string name="admin_activity_db_import_unsupported">Arquivo não suportado, confira a formatação e tente novamente!
+    </string>
+
+    <!-- Admin Custom Form Screen -->
+    <string name="custom_form_toolbar_title">Perguntas do formulário</string>
+    <string name="custom_form_personal_info_label">Informações pessoais</string>
+    <string name="custom_form_personal_info_first_name">Primeiro nome</string>
+    <string name="custom_form_personal_info_gender">Sexo</string>
+    <string name="custom_form_personal_info_email">E-mail</string>
+    <string name="custom_form_personal_info_home_phone">Telefone fixo</string>
+    <string name="custom_form_personal_info_surname">Sobrenome</string>
+    <string name="custom_form_personal_info_birthdate">Data de nascimento</string>
+    <string name="custom_form_personal_info_copy_email">E-mail para cópia</string>
+    <string name="custom_form_personal_info_cellphone">Celular</string>
+    <string name="custom_form_address_label">Endereço</string>
+    <string name="custom_form_address_country">País</string>
+    <string name="custom_form_address_city">Cidade</string>
+    <string name="custom_form_address_address">Endereço</string>
+    <string name="custom_form_address_complement">Complemento</string>
+    <string name="custom_form_address_state">Estado</string>
+    <string name="custom_form_address_neighbourhood">Bairro</string>
+    <string name="custom_form_address_zip_code">CEP</string>
+    <string name="custom_form_company_label">Empresa</string>
+    <string name="custom_form_company_name">Nome da empresa</string>
+    <string name="custom_form_company_activity">Ramo de atividade da empresa</string>
+    <string name="custom_form_company_office">Cargo</string>
+    <string name="custom_form_company_name_for_badge">Nome da empresa para crachá</string>
+    <string name="custom_form_company_badge_name">Nome para crachá</string>
+    <string name="custom_form_company_job">Qual é o seu papel na empresa / organização?</string>
+    <string name="custom_form_products_label">Produtos</string>
+    <string name="custom_form_products_buy_and_production">Aquisição e produção</string>
+    <string name="custom_form_products_connected_media">Mídias conectadas</string>
+    <string name="custom_form_products_displays_and_systems">Displays e sistemas de sinalização</string>
+    <string name="custom_form_products_systems_management">Gerenciamento de sistemas</string>
+    <string name="custom_form_products_pro_audio">Pro áudio / som</string>
+    <string name="custom_form_products_content">Conteúdo</string>
+    <string name="custom_form_products_distribution">Distribuição e entregas</string>
+    <string name="custom_form_products_services">Serviços</string>
+    <string name="custom_form_products_pos_production">Pós-produção</string>
+
+    <!-- Admin Print Config Activity -->
+    <string name="print_config_toolbar_title">Configuração da impressora</string>
+    <string name="print_config_printer_model_label">Modelo da impressora</string>
+    <string name="print_config_access_type_label">Acesso</string>
+    <string name="print_config_device_label">Dispositivo</string>
+    <string name="print_config_label">Etiqueta</string>
+
+    <!-- Admin charts -->
+    <string name="bar_chart_title">Índice de cadastros diários para o evento</string>
+    <string name="pie_chart_title">Índice dos horários mais cadastrados</string>
+
+    <!-- New Register Activity -->
+    <string name="new_register_name_hint">Primeiro nome</string>
+    <string name="new_register_surname_hint">Sobrenome</string>
+    <string name="new_register_gender_hint">Sexo</string>
+    <string name="new_register_day_hint">Dia</string>
+    <string name="new_register_month_hint">Mês</string>
+    <string name="new_register_year_hint">Ano</string>
+    <string name="new_register_cpf_hint">CPF</string>
+    <string name="new_register_email_hint">E-mail</string>
+    <string name="new_register_copy_email_hint">E-mail para cópia</string>
+    <string name="new_register_phone_code_hint">DDD</string>
+    <string name="new_register_phone_number_hint">Telefone fixo</string>
+    <string name="new_register_branch_hint">Ramal</string>
+    <string name="new_register_mobile_code_hint">DDD</string>
+    <string name="new_register_mobile_number_hint">Celular</string>
+    <string name="new_register_continue_text">CONTINUAR</string>
+    <string name="new_register_address_country">País</string>
+    <string name="new_register_address_state">Estado</string>
+    <string name="new_register_address_city">Cidade</string>
+    <string name="new_register_address_neighbourhood">Bairro</string>
+    <string name="new_register_address_address">Endereço</string>
+    <string name="new_register_address_address_number">Número</string>
+    <string name="new_register_address_postal_code">CEP</string>
+    <string name="new_register_address_complement">Complemento</string>
+    <string name="new_register_address_back">VOLTAR</string>
+    <string name="new_register_address_continue">CONTINUAR</string>
+    <string name="new_register_company_name">Nome da empresa</string>
+    <string name="new_register_company_name_for_badge">Nome da empresa para crachá</string>
+    <string name="new_register_name_for_badge">Nome para crachá</string>
+    <string name="new_register_company_office">Cargo</string>
+    <string name="new_register_company_back">Voltar</string>
+    <string name="new_register_company_continue">Continuar</string>
+    <string name="new_register_products_toolbar">Novo cadastro / New registre</string>
+    <string name="new_register_products_buy_and_production_label">Aquisição e produção</string>
+    <string name="new_register_products_buy_and_production_gadgets">Acessórios / equipamentos e software para captação</string>
+    <string name="new_register_products_buy_and_production_cinema_captation">Captação para cinema / produção virtual</string>
+    <string name="new_register_products_buy_and_production_set_design">Cenografia / Adereços / Móveis e Utensílios</string>
+    <string name="new_register_products_buy_and_production_remote_contribution">Contribuição remota</string>
+    <string name="new_register_products_buy_and_production_camera_and_lens">Câmeras e lentes</string>
+    <string name="new_register_products_buy_and_production_lights_and_support">Iluminação e suporte</string>
+    <string name="new_register_products_buy_and_production_microphone">Microfones</string>
+    <string name="new_register_products_buy_and_production_mobile_production">Produção móvel / Unidades móveis</string>
+    <string name="new_register_products_buy_and_production_cinema_production">Produção para cinema e filmes</string>
+    <string name="new_register_products_buy_and_production_workflow_solutions">Solução de workflow</string>
+    <string name="new_register_products_buy_and_production_digital_solutions">Soluções digitais para jornalismo</string>
+    <string name="new_register_products_displays_label">Displays e sistemas de sinalização</string>
+    <string name="new_register_products_displays_business_stakeholders">Consultores de Negócios e Tecnologia</string>
+    <string name="new_register_products_displays_events">Publicações / Eventos / Portais</string>
+    <string name="new_register_products_displays_tablets">Tablets</string>
+    <string name="new_register_products_opt_in_partner_emails">Autorizar receber e-mails de expositores e patrocinadores do evento e/ou parceiros da SET</string>
+    <string name="new_register_products_opt_in_event_changes_email">Aceitar receber e-mails com avisos do evento (mudanças de programação, avisos etc)</string>
+    <string name="new_register_products_opt_in_set_newsletter">Autorizar receber newsletter da SET</string>
+    <string name="new_register_products_opt_in_back">VOLTAR</string>
+    <string name="new_register_products_opt_in_continue">CONTINUAR</string>
+    <string name="new_register_products_step_personal_info_label">Informações pessoais</string>
+    <string name="new_register_products_step_address_label">Endereço</string>
+    <string name="new_register_products_step_company_label">Empresa</string>
+    <string name="new_register_products_step_products_label">Produtos</string>
+    <string name="new_register_products_blue_circle_personal_info_text">1</string>
+    <string name="new_register_products_blue_circle_address_text">2</string>
+    <string name="new_register_products_blue_circle_company_text">3</string>
+    <string name="new_register_products_blue_circle_products_text">4</string>
+    <string name="new_register_participant_already_registered_message">CPF já cadastrado!</string>
+
+    <!-- Adapter list item -->
+
+    <!-- New Register -->
+    <string-array name="new_register_gender_array">
+        <item>Masculino</item>
+        <item>Feminino</item>
+    </string-array>
+</resources>
